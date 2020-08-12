@@ -1,3 +1,21 @@
+/*
+
+reglas = conjunto de seletores, todo lo de abajo
+selectorres = body
+declaraciones = {}
+propiedades = width
+valores = 10%
+
+.logo{
+    width: 10%;
+}
+
+selector de etiqueta = h1,body header
+selector hijo de un elemento
+*/
+
+
+
 
 .logo{
     width: 10%;
