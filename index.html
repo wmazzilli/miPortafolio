@@ -6,10 +6,11 @@
         <link rel="icon" type="imagen/png" href="img/logo.png" />
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="estilos.css">
+
     </head>
     <body>
         <header class="header">
-            <div>
+            <div class="container">
                 <figure class="logo">
                     <img class="logo" src="img/logo.png" alt="Logo https://i.pinimg.com/originals/9f/87/22/9f87226b1fdaacb5a9e8ed6609e1adad.png">
                 </figure>
@@ -25,20 +26,24 @@
                             <a class="link" href="#contacto">Trabajemos Juntos</a>
                         </li>
                     </ul>
-                </nav>         
+                </nav>     
+                
             </div>
-            <link rel="stylesheet" href="estilos.css">
+               
+
+
         </header>
-        <a href=""></a>
+
+   
         <main >
-            <section class="hero">
+            <div class="container">
+                <section class="hero">
                     <h1>Hola, Soy <strong>Walberto Mazzilli</strong>  <br>  estudiante de <strong>Ing en sistemas </strong><br> con muchas ganas de <strong>triunfar</strong>
                     </h1>
                     <figure>
-                 <!--   <img src="img/heroe.jpg" alt="Walberto"/> -->     
-                    </figure>   
-                    
-            </section>
+                      <img class="hero-imagen" src="img/heroe.jpg" alt="Walberto">
+                    </figure>     
+                </section>
 
             <section id="portafolio" class="portfolio"> 
                     <h2>Portafolio </h2>
@@ -53,7 +58,6 @@
                                 pkppkpkpkpkiycuñlpepjpigijepigjejejld sojcsojojosjcosjcosj jsocosjcosjcoj ajcojoaojoacaoj oajocjaoacocaoaja
                             </p>
                         </div>
-                       
                         <figure class="project-imageContainer">
                             <img class="project-image" src="img/walberto.jpg" alt="Mi persona">
                         </figure>
@@ -62,7 +66,7 @@
                     <article class="project">
                         <div class="project-details">
                             <h3 class="project-title">Platzi videos</h3>
-                            <h6 class="project-curse">Estudiante / ing en sistemas</h6>
+                            <h6 class="project-course">Estudiante / ing en sistemas</h6>
 
                             <p class="project-description">
                                 Corporacion Politecnico Costa Atlantica - 10th Semestre
@@ -77,38 +81,74 @@
                     </article>
             </section>
 
-            
-
-
+        
             <!--Leer sobre la etiqueta article
             figure -> img
             -->
-            <section id="eventos">
-                <h2>Mas sobre mi Experiencia</h2>
+            <h2 class="event-list-title">Mis Lugares de Formacion</h2>
+            <section id="eventos" class="event-list">
+               
                 <article class="event">
                     <figure class="event-imageContainer">
                         <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
                     </figure>
-                  <h3 class="event-title">Politecnico Costa Atlantica</h3>
-                  <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
-                  <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                    <div class="event-detail">
+                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                    </div>
                 </article>
-            
+
+                <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                    </div>
+                </article>
+
+                <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                    </div>
+                </article>
+
             </section>
 
             <section id="contacto" class="contact">
                 <form action="#" method="post" class="form-email">
                     <h3>¿Creamos algo juntos?</h3>
                     <input type="text" name="" id="email" placeholder="Déjanos tu email"/>
-                    <br/>
-                    <input type="submit" value="Enviar">
-                </form>         
+                    <button>Enviar</button>
+                </form>  
+                <div class="social">
+                    <a href="" class="social-link linkid"></a>
+                    <a href="" class="social-link instagram"></a>
+                    <a href="https://github.com/wmazzilli" class="social-link github" target="_blank"></a>
+                    <a href="" class="social-link facebook"></a>
+                </div>       
             </section>
-        </main>
-    
 
-        <footer>
-                Footer
+            </div>
+        </main>
+
+        <!-- Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> -->
+
+
+        <footer class="footer">
+               <div class="container">
+                <p>
+                    Walberto Antonio Mazzilli Romero Creador - Platzi
+                </p>
+               </div>
         </footer>
     </body>
 </html>   
