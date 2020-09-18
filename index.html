@@ -2,11 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale =1">
         <title>Walberto Mazzilli</title>
         <link rel="icon" type="imagen/png" href="img/logo.png" />
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="media.css" media="screen and (max-width:768px)"> -->
         <link rel="stylesheet" href="estilos.css">
-
     </head>
     <body>
         <header class="header">
@@ -27,25 +28,22 @@
                         </li>
                     </ul>
                 </nav>     
-                
             </div>
-               
-
-
         </header>
 
    
         <main >
-            <div class="container">
+            <!-- <div class="container">
                 <section class="hero">
                     <h1>Hola, Soy <strong>Walberto Mazzilli</strong>  <br>  estudiante de <strong>Ing en sistemas </strong><br> con muchas ganas de <strong>triunfar</strong>
                     </h1>
                     <figure>
                       <img class="hero-imagen" src="img/heroe.jpg" alt="Walberto">
                     </figure>     
-                </section>
+                </section> -->
 
-            <section id="portafolio" class="portfolio"> 
+             <section id="portafolio" class="portfolio-principal" > 
+                <div class="portfolio">
                     <h2>Portafolio </h2>
                     <article class="project">
                         <div class="project-details">
@@ -54,8 +52,7 @@
 
                             <p class="project-description">
                                 Corporacion Politecnico Costa Atlantica - 10th Semestre
-                                
-                                pkppkpkpkpkiycuñlpepjpigijepigjejejld sojcsojojosjcosjcosj jsocosjcosjcoj ajcojoaojoacaoj oajocjaoacocaoaja
+                                Iron Man es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee, desarrollado por el guionista Larry Lieber y diseñado por los artistas Don Heck y Jack
                             </p>
                         </div>
                         <figure class="project-imageContainer">
@@ -70,8 +67,7 @@
 
                             <p class="project-description">
                                 Corporacion Politecnico Costa Atlantica - 10th Semestre
-                                
-                                pkppkpkpkpkiycuñlpepjpigijepigjejejld sojcsojojosjcosjcosj jsocosjcosjcoj ajcojoaojoacaoj oajocjaoacocaoaja
+                                Iron Man es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee, desarrollado por el guionista Larry Lieber y diseñado por los artistas Don Heck y Jack
                             </p>
                         </div>
                        
@@ -79,76 +75,81 @@
                             <img class="project-image" src="img/walberto.jpg" alt="Mi persona">
                         </figure>
                     </article>
+                </div>    
             </section>
 
         
-            <!--Leer sobre la etiqueta article
-            figure -> img
-            -->
-            <h2 class="event-list-title">Mis Lugares de Formacion</h2>
-            <section id="eventos" class="event-list">
-               
-                <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
-                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
-                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+            
+            
+            <div class="titulo-evento">
+               <h2 class="event-list-title">Mis Lugares de Formacion</h2>
+            </div> 
+            <section id="eventos" class="event-padre">
+                <div class="event-list">
+                    <article class="event">
+                        <figure class="event-imageContainer">
+                            <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                            <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                            <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                        </div>
+                    </article>
+
+                    <article class="event">
+                            <figure class="event-imageContainer">
+                                <img class="event-image" src="img/itsa.jpg" alt="Politecnico" width="400px">
+                            </figure>
+                            <div class="event-detail">
+                                <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                                <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                                <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                            </div>
+                    </article>
+
+                    <article class="event">
+                        <figure class="event-imageContainer">
+                            <img class="event-image" src="img/sena.jpg" alt="Politecnico" width="400px">
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">Politecnico Costa Atlantica</h3>
+                            <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
+                            <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
+                        </div>
+                    </article>
+                </div>
+            </section> 
+
+             <section class="contact-principal">
+                 <div id="contacto" class="contact">
+                    <form action="#" method="post" class="form-email">
+                        <h3>¿Creamos algo juntos?</h3>
+                        <input type="text" name="" id="email" placeholder="Déjanos tu email"/>
+                        <button>Enviar</button>
+                    </form>  
+                    <div class="social">
+                        <a href="" class="social-link linkid"></a>
+                        <a href="" class="social-link instagram"></a>
+                        <a href="https://github.com/wmazzilli" class="social-link github" target="_blank"></a>
+                        <a href="" class="social-link facebook"></a>
                     </div>
-                </article>
+                </div>         
+            </section> 
 
-                <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
-                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
-                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
-                    </div>
-                </article>
-
-                <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event-image" src="img/pca.jpg" alt="Politecnico" width="400px">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Politecnico Costa Atlantica</h3>
-                        <p class="event-description">Corporacion donde curse mi parte final de mis estudios, me brindo la oportunidad de ser ingeniero</p>
-                        <a href="https://pca.edu.co/wp/" target="_blank">Go</a>
-                    </div>
-                </article>
-
-            </section>
-
-            <section id="contacto" class="contact">
-                <form action="#" method="post" class="form-email">
-                    <h3>¿Creamos algo juntos?</h3>
-                    <input type="text" name="" id="email" placeholder="Déjanos tu email"/>
-                    <button>Enviar</button>
-                </form>  
-                <div class="social">
-                    <a href="" class="social-link linkid"></a>
-                    <a href="" class="social-link instagram"></a>
-                    <a href="https://github.com/wmazzilli" class="social-link github" target="_blank"></a>
-                    <a href="" class="social-link facebook"></a>
-                </div>       
-            </section>
-
-            </div>
+            </div> 
         </main>
 
-        <!-- Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> -->
-
-
+        
         <footer class="footer">
                <div class="container">
                 <p>
                     Walberto Antonio Mazzilli Romero Creador - Platzi
                 </p>
                </div>
-        </footer>
+        </footer> 
+        
+    
+
     </body>
 </html>   

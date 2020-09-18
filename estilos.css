@@ -21,7 +21,6 @@ celeste #026fff
 */
 
 
-
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,7 +29,11 @@ body {
 h1,h2,h3,h4,h5,h6{
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
+    margin: 10px;
     /*font-style: italic;*/
+}
+.portfolio h2{
+    margin-top: 0px;;
 }
 
 .project-course{
@@ -38,14 +41,21 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+
+
 .project-date,
 .proyect-url{
     margin: 10px;
 }
 
-.project-description{
 
+.project-date,
+.proyect-url,
+.project-course{
+    margin: .4em 0;;
 }
+
+
 
 
 
@@ -84,6 +94,7 @@ h1 strong{
     display: flex;
     justify-content: space-between;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .hero figure .hero-imagen{
@@ -104,18 +115,17 @@ h1 strong{
     */
     border: 1px solid gray;
     border-radius: 10px;
-    /* margin: 10px; */
-    margin-bottom: 15px ;
+    margin: 10px; 
+    margin-bottom: 0px ;
     padding: 20px;
     background: white;
     display: flex ;
-    /*justify-content: buscar flex-start or flex-end or center
-    space-around or space-between*/
-    /* Align-items:  -> leer
-    flex-direction: columns: ;*/
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
 
 }
 .project-title {
@@ -125,14 +135,20 @@ h1 strong{
     margin-bottom: 10px;
 }
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
 
 .project-imageContainer{
 
-    width: 500px;
+    width: 50%;
     height: 100px;
+   
+}
+
+.project-image{
+    display: flex;
+    margin: auto;;
 }
 
 .project strong{
@@ -144,8 +160,9 @@ h1 strong{
     height: 120px;
     color: white;
     display: flex;
-    /* align-items: center; */
+     align-items: center; 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header ul{
@@ -184,21 +201,25 @@ ol, ul{
 
 }
 
-figure{
-    margin: 0;
-}
-
 .header a{
     text-decoration:none;
     color: white;
 }
 
+figure{
+    margin: 0;
+}
 
 
 .portfolio {
     background: #ECE6E6;
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
+.portfolio-principal{
+    background: #ECE6E6;
 }
 
 h2{
@@ -212,18 +233,23 @@ h2{
 
 .event-list{
     display: flex;
-    background-color: #f4fbff;
+    background-color: #ECE6E6;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event-padre{
+    background-color: #ECE6E6;
 }
 
 .event{
 
-    margin: 10px;
-    width: 480px;
+    margin: 1%;;
+    width: 48%;
     flex-shrink: 0;
     overflow: hidden;
     background-color: #f4fbff;
-    
 
 }
 
@@ -242,6 +268,13 @@ h2{
 .event-list-title{
     text-align: center;
     margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ECE6E6;
+    padding: 10px;
+}
+
+.titulo-evento{
+    background-color: #ECE6E6;
 }
 
 .event-detail {
@@ -277,6 +310,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-principal{
+    background-color: #056fff;
 }
 
 
@@ -328,7 +368,7 @@ h2{
     width: 150px;
     margin: 10px auto;
 }
-
+ 
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
     padding-left: 10px;
@@ -336,16 +376,23 @@ h2{
 }
 
 
-/* Footer */
 
-.footer{
+/* Footer */
+ 
+.footer .container{
     background-color: #1b2127;
     height: 50px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #1b2127;
 }
 
 .footer p{
@@ -359,7 +406,179 @@ h2{
     align-items: inherit;
     height: inherit;
     border: 1px solid red;
-    width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px;
+    flex: 1;
+     margin: 0 auto;
     flex-wrap: inherit;
 }
+/* 
+desktop first del mas grande al mas pequeño
+si es para app de menor a mayor */
+
+@media screen and (max-width: 1024px){
+  
+
+}
+
+@media screen and (max-width: 767px)
+{
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ul{
+        display: initial;
+    }
+
+    .header ul li {
+        height: 50px;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+ 
+    .header .logo{
+        text-align: center;
+    }
+    
+    .project{
+        display: flex;
+        justify-content: center;
+        padding: 57px;
+    }
+
+    .project-image{
+        width: auto;
+
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 12px;;
+    }
+
+    .event-list{
+        display: flex;
+        background-color: #f4fbff;
+        flex-wrap: wrap;
+    }
+
+    .event{
+        margin: 1%;;
+        width: 98%;
+        flex-shrink: 0;
+        overflow: hidden;
+        background-color: #f4fbff;
+    
+    }
+
+    .event img{
+        width: 100%;
+    }
+
+    .contact {
+        background-color: #056fff;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px){
+    
+    .project-image {
+        width: auto;
+        display: flex;
+        margin-left: -26px;
+    }
+
+
+    .event-list{
+        display: flex;
+        background-color: #f4fbff;
+        flex-wrap: wrap;
+    }
+    
+    .event{
+        margin: 1%;;
+        width: 98%;
+        flex-shrink: 0;
+        overflow: hidden;
+        background-color: #f4fbff;
+    
+    }
+    
+    .event img{
+        width: 100%;
+    }
+    
+    .event-list-title{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .event-detail {
+        margin:20px 40px;
+        background-color: white;
+        margin-top: -60px;
+        /* estudias las position */
+        position: relative;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .event-description{
+        text-align: left;
+    }
+    
+    .event a{
+        text-decoration: none;
+        border: 1px solid #026fff;
+        padding: 5px 60px;
+        font-size: 18px;
+        color: #026fff;
+        border-radius: 5px;  
+    }
+    
+    .contact {
+        background-color: #056fff;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}  
+
+
+@media screen and (max-width: 320px){
+  
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .contact {
+        background-color: #056fff;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+}
+
+
+
+
